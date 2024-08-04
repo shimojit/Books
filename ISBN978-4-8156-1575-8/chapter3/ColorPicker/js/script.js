@@ -1,1 +1,1 @@
-console.log(document.querySelector('#colorPicker'));
+document.querySelector('#colorText').textContent = `カラーコード：${document.querySelector('#colorPicker').value}`;
