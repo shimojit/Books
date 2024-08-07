@@ -1,41 +1,28 @@
-const heading = document.querySelector('#heading');
+const items = document.querySelectorAll('.img-item');
 
-const keyframes = {
-  // 下からポップアップ
-  //opacity: [0, 1],
-  //translate: ['0 50px', 0],
+for (let i = 0; i < items.length; i++) {
+  const keyframes = {
+    //opacity: [0, 1],
 
-  // x軸360度回転
-  //rotate: ['x 360deg', 0],
+    // 画像を回転させる場合
+    //rotate: ['x 90deg', 0],
 
-  // 色の変化
-  //color: ['#f66', '#fc2', '#0c6', '#0bd'],
+    // 下からポップアップさせる場合
+    //translate: ['0 50px', 0],
 
-  // 背景が伸びるように変化
-  //color: ['transparent', '#fff'],
-  //backgroundPosition: ['100% 0%', '0% 0%'],
+    // ふわふわと落ちてくるような画像の場合
+    //rotate: ['5deg', 0],
+    //scale: [1.1, 1],
 
-  // ふよふよ動くように変化
-  borderRadius: [
-    '20% 50% 50% 70%/50% 50% 70% 50%',
-    '50% 20% 50% 50%/40% 40% 60% 60%',
-    '50% 40% 20% 40%/40% 50% 50% 80%',
-    '50% 50% 50% 20%/40% 40% 60% 60%',
-  ],
-};
+    // ぼかしからクリアになる場合
+    filter: ['blur(20px)', 'blur(0)'],
+  };
 
-const options = {
-  // 必須
-  duration: 8000,
+  const options = {
+    duration: 600,
+    delay: i * 300,
+    fill: 'forwards',
+  };
 
-  // 変化の速度調整
-  //easing: 'ease',
-
-  // アニメーションの実行方向
-  direction: 'alternate',
-
-  // アニメーションの繰り返し回数
-  iterations: Infinity,
-};
-
-heading.animate(keyframes, options);
+  items[i].animate(keyframes, options);
+}
