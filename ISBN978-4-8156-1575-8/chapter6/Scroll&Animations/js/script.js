@@ -1,6 +1,10 @@
 // 監視対象が範囲内に現れたら実行する動作
-const showKirin = () => {
-  console.log('キリンさんです');
+const showKirin = (entries) => {
+  const keyframes = {
+    opacity: [0, 1],
+    translate: ['200px 0', 0],
+  };
+  entries[0].target.animate(keyframes, 600);
 };
 
 // 監視ロボットの設定
