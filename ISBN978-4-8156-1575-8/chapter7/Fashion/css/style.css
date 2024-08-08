@@ -48,11 +48,11 @@ img {
   margin: 2rem 0;
   transition: .4s;
 }
-/*
+
 .fadein{
   opacity: 0;
 }
-*/
+
 /*
 LAYOUT
 ================================================== */
@@ -225,6 +225,33 @@ GALLERY
 }
 
 /*
+SHOP INFO
+================================================== */
+.shop {
+  background: url('../images/bg-shop.jpg') no-repeat center top / cover;
+  margin-top: 16rem;
+  position: relative;
+  height: 40rem;
+}
+
+.shop-content {
+  background: var(--white);
+  padding: 3rem;
+  position: absolute;
+  top: -8rem;
+  width: 90vw;
+  left: 0;
+  right: 0;
+}
+
+.shop h3 {
+  margin: 1rem 0;
+  padding-top: 2rem;
+  font-weight: normal;
+  border-top: 1px solid var(--light-grey);
+}
+
+/*
 DESCTOP SIZE
 ================================================== */
 @media (min-width: 800px) {
@@ -264,5 +291,11 @@ DESCTOP SIZE
   .gallery-thumbnails img:hover {
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
     transition: 0.4s;
+  }
+
+/* SHOP INFO */
+  .shop {
+    margin-top: 20rem;
+    height: 50rem;
   }
 }
