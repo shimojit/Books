@@ -179,6 +179,25 @@ HERO
 }
 
 /*
+CONCEPT
+================================================== */
+.concept {
+  margin: 8rem 0;
+  background-image: linear-gradient(
+    to right,
+    transparent 0%,
+    transparent 20%,
+    var(--light-grey) 20%,
+    var(--light-grey) 100%
+  );
+}
+
+.concept p {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+/*
 GALLERY
 ================================================== */
 .gallery {
@@ -265,6 +284,35 @@ DESCTOP SIZE
     background: var(--light-green);
   }
 
+/* SLIDE MENU */
+  .btn-menu:hover {
+    background-color: var(--light-green);
+  }
+
+  #menu-close:hover svg {
+    fill: var(--brown);
+  }
+
+  .menu-list a:hover {
+    transition: 0.4s;
+    color: var(--green);
+  }
+
+/* CONCEPT */
+  .concept {
+    display: flex;
+    margin: 16rem 0;
+  }
+
+  .concept p {
+    text-align-last: left;
+  }
+
+  .concept img {
+    margin: -6rem 0;
+    max-width: 38rem;
+  }
+  
 /* GALLERY */
   .gallery {
     flex-direction: row;
