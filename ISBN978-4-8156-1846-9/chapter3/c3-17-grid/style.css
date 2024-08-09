@@ -1,0 +1,12 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 子要素の横幅 */
+  gap: 10px; /* グリッド間の間隔 */
+  grid-template-rows: 200px 200px; /* 子要素の縦幅 */
+}
+
+.item {
+  background:  #0bd;
+  color: #fff;
+  padding: 10px;
+}
