@@ -229,6 +229,12 @@ img {
   font-size: 0.875rem;
 }
 
+/* CONTACT
+----------------------------------------------- */
+.cover-contact {
+  background-image: url(../images/cover-contact-s.webp);
+}
+
 /* フッター
 ----------------------------------------------- */
 .page-footer {
