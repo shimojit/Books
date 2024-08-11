@@ -206,6 +206,12 @@ img {
   color: #0bd;
 }
 
+/* MENU
+----------------------------------------------- */
+.cover-menu {
+  background-image: url(../images/cover-menu-s.webp);
+}
+
 /* フッター
 ----------------------------------------------- */
 .page-footer {
