@@ -40,7 +40,8 @@ img {
 }
 
 .page-title,
-.heading-large {
+.heading-large,
+.heading-medium {
   font-size: 3rem;
   text-align: center;
 }
@@ -134,6 +135,75 @@ img {
 ----------------------------------------------- */
 .cover-news {
   background-image: url(../images/cover-news-s.webp);
+}
+
+/* 記事部分 */
+.post {
+  margin-bottom: 3rem;
+}
+
+.post-title {
+  font-weight: normal;
+  margin-bottom: 1.25rem;
+}
+
+.post-info {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.post-cat {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.post-cat a {
+  color: #432;
+  background-color: #faf7f0;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.post-cat a:hover {
+  background-color: #c9c2bc;
+}
+
+.post-date {
+  font-size: 0.875rem;
+}
+
+.post-thumbnail {
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+}
+
+.post p {
+  margin-bottom: 1.5rem;
+  line-height: 2;
+}
+
+/* サイドバー */
+.side-menu {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.side-menu li {
+  border-bottom: 1px solid #c9c2bc;
+}
+
+.side-menu a {
+  color: #432;
+  display: block;
+  padding: 1rem;
+}
+
+.side-menu a:hover {
+  color: #0bd;
 }
 
 /* フッター
