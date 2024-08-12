@@ -73,6 +73,11 @@ img {
   translate: 10px;
 }
 
+/* iframe */
+iframe {
+  width: 100%;
+}
+
 /* ヘッダー
 ----------------------------------------------- */
 .page-header {
@@ -233,6 +238,49 @@ img {
 ----------------------------------------------- */
 .cover-contact {
   background-image: url(../images/cover-contact-s.webp);
+}
+
+/* 店舗情報 */
+.location {
+  margin-bottom: 3.5rem;
+}
+
+.location-info {
+  margin-bottom: 2rem;
+}
+
+.location-info .info {
+  padding: 0;
+}
+
+/* お問い合わせ */
+.email {
+  max-width: 916px;
+  background-color: #faf7f0;
+  border-radius: 48px;
+  padding: 1.5rem 2.5rem 2.5rem;
+  margin: 0 auto 2rem;
+}
+
+.email p {
+  margin: 1rem 0 2rem;
+}
+
+/* SNS */
+.sns-item {
+  margin-bottom: 2rem;
+}
+
+.sns-item .heading-medium {
+  margin-bottom: 0.5rem;
+}
+
+.sns-youtube {
+  aspect-ratio: 16 / 9;
+}
+
+.sns-youtube iframe {
+  height: 100%;
 }
 
 /* フッター
